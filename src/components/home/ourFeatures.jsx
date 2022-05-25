@@ -5,12 +5,12 @@ const OurFeatures = () => {
     <section className="mt-5">
       <div className="">
         <div className="flex my-2 justify-center items-center gap-1">
-          <div className="h-0.5 w-4 bg-blue-600"></div>
+          <div className="h-0.5 w-4 bg-primary"></div>
           <p className="text-sm font-medium ">Our</p>
-          <p className="text-sm font-medium text-blue-600">Features</p>
+          <p className="text-sm font-medium text-primary">Features</p>
         </div>
         <h1 className="text-3xl text-center font-semibold my-1">
-          Our <span className="text-blue-900">Solution</span> For All Your Basic
+          Our <span className="text-primary">Solution</span> For All Your Basic
           Needs
         </h1>
         <p className="text-sm font-normal text-center font-roboto">

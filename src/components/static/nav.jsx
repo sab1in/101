@@ -1,6 +1,29 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../image/logo.svg";
 
+const NavList = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Services",
+    path: "/service",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,13 +38,21 @@ const Nav = () => {
         </div>
         <div className="hidden md:block">
           <ul className="flex  justify-between items-center">
-            <li className="mx-5 font-semibold text-base border-b-4 border-primary text-primary">
-              Home
-            </li>
-            <li className="mx-5 font-semibold text-base">About</li>
-            <li className="mx-5 font-semibold text-base">Services</li>
-            <li className="mx-5 font-semibold text-base">Blog</li>
-            <li className="mx-5 font-semibold text-base">Contact</li>
+            {Array.isArray(NavList) &&
+              NavList.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <NavLink
+                      exact
+                      to={item.path}
+                      className="mx-5 font-semibold text-base border-b-4 border-white"
+                      activeClassName="border-primary text-primary"
+                    >
+                      {item.name}
+                    </NavLink>
+                  </li>
+                );
+              })}
           </ul>
         </div>
         <div className="hidden md:block border-primary text-primary border-2 rounded-3xl text-base font-semibold shadow-sm py-1 px-4">
@@ -35,8 +66,8 @@ const Nav = () => {
         style={{ transition: "all 0.3s ease-in-out" }}
         className={
           isOpen
-            ? " w-60 absolute  bg-purple-300 h-screen top-0 overflow-y-auto"
-            : "w-0 absolute overflow-hidden bg-purple-300 h-screen top-0 overflow-y-auto"
+            ? " w-60 fixed   bg-purple-300 h-screen top-0 overflow-y-auto z-50"
+            : "w-0 fixed overflow-hidden bg-purple-300 h-screen top-0 overflow-y-auto z-50"
         }
       >
         <div className="flex justify-center ">

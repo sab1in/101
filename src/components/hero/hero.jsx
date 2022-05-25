@@ -15,7 +15,7 @@ const Hero = () => {
             "linear-gradient(111.08deg, #091E80 1.49%, #3254F1 96.65%)",
           borderRadius: "25px 25px 150px 25px",
         }}
-        className="w-full relative overflow-hidden"
+        className="w-full relative z-0 overflow-hidden"
       >
         <div className="w-full px-4 md:px-10 lg:px-0  lg:w-11/12 xl:w-10/12 pb-16 lg:mx-auto flex  md:flex-row flex-col-reverse md:gap-11 lg:justify-center lg:items-center">
           <div className="md:w-1/2 lg:w-7/12  relative md:mt-10 lg:ml-10 ">

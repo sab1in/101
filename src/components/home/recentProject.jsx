@@ -2,7 +2,7 @@ import image from "../../image/image 36.jpg";
 
 const RecentProject = () => {
   return (
-    <section className="w-full bg-blue-200 py-10">
+    <section className="w-full bg-primary1 py-10">
       <div className="w-11/12 lg:w-10/12 mx-auto sm:flex gap-10 h-full">
         <div className="sm:w-8/12 sm:mx-auto md:mx-0 md:w-1/2 h-full">
           <img src={image} alt="" className="m-0 rounded-md" />
@@ -32,7 +32,7 @@ const RecentProject = () => {
             mixture of spices and namkeens.
           </p>
           <div>
-            <button className="text-sm font-normal text-white py-2 px-3 mt-5 rounded-md bg-blue-500">
+            <button className="text-sm font-normal text-white py-2 px-3 mt-5 rounded-md bg-primary">
               View More Portfolio
             </button>
           </div>

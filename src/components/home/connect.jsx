@@ -1,6 +1,6 @@
 const Connect = () => {
   return (
-    <section className="bg-blue-100 mt-4">
+    <section className="bg-primary1 mt-4">
       <div className="w-11/12 lg:w-9/12 mx-auto py-8 flex justify-between sm:flex-row flex-col gap-4 sm:gap-0">
         <div className="md:w-1/2 ">
           <div className="flex justify-center md:justify-start my-2 items-center gap-1">

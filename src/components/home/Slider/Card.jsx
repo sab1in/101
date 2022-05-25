@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./card.css";
 
 const Card = ({
@@ -10,16 +10,12 @@ const Card = ({
   image,
   position,
   DataListLength,
-  forwardedRef,
 }) => {
-  const { card } = forwardedRef;
-
   // social media icons ref
   const link = React.useRef();
 
   return (
     <div
-      ref={card}
       onMouseOver={() => {
         if (activeSlide === index + 1) {
           link.current.style.opacity = "1";
@@ -51,7 +47,7 @@ const Card = ({
       <div className="flex items-center gap-2">
         {activeSlide !== 1 && (
           <svg
-            className={`w-8 h-8 cursor-pointer focus:w-12 focus:h-12 text-blue-500 ${
+            className={`w-8 h-8 cursor-pointer focus:w-12 focus:h-12 text-primary ${
               activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
             }`}
             onClick={() => {
@@ -126,7 +122,7 @@ const Card = ({
         </div>
         {activeSlide !== DataListLength && (
           <svg
-            className={`w-8 h-8 cursor-pointer focus:w-12 focus:h-12 text-blue-500  ${
+            className={`w-8 h-8 cursor-pointer focus:w-12 focus:h-12 text-primary  ${
               activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
             }`}
             onClick={() => {
@@ -153,7 +149,7 @@ const Card = ({
         style={{
           transition: "transform 0.5s",
         }}
-        className={`text-lg mt-1 font-semibold text-blue-600 text-center ${
+        className={`text-lg mt-1 font-semibold text-primary text-center ${
           activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
         }`}
       >
@@ -181,7 +177,7 @@ const Card = ({
           activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
         }`}
       >
-        <button className="text-white py-2 px-2 mx-auto mt-4 rounded-md text-sm  bg-blue-600 ">
+        <button className="text-white py-2 px-2 mx-auto mt-4 rounded-md text-sm  bg-primary ">
           Join Our Team
         </button>
       </div>

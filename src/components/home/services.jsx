@@ -1,4 +1,5 @@
 import Frame1 from "../../image/Frame908.svg";
+import arrow from "../../image/Vector.svg";
 
 const Services = () => {
   return (
@@ -29,7 +30,7 @@ const Services = () => {
           return (
             <div
               key={index}
-              className="col-span-1 flex flex-col items-center justify-center rounded-lg bg-blue-100 py-7 px-3"
+              className="col-span-1 flex flex-col items-center justify-center rounded-lg bg-primary1 py-7 px-3"
             >
               <div className="pb-2">
                 <img src={Frame1} alt="Frame" />
@@ -43,8 +44,8 @@ const Services = () => {
                 Maintenance, Website Redesign
               </p>
               <div>
-                <p className="text-primary text-xs font-semibold mt-4">
-                  Read More
+                <p className="text-primary flex gap-2 text-xs font-semibold mt-4">
+                  <div>Read More</div> <img src={arrow} alt="arrow" />
                 </p>
               </div>
             </div>

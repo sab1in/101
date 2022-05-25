@@ -1,21 +1,9 @@
 import React from "react";
 import "./card.css";
 
-const Card = ({
-  activeSlide,
-  index,
-  description,
-  name,
-  position,
-  forwardedRef,
-}) => {
-  const { card } = forwardedRef;
-
-  // social media icons ref
-
+const Card = ({ activeSlide, index, description, name, position }) => {
   return (
     <div
-      ref={card}
       style={{
         transition: "transform 0.5s",
       }}
@@ -57,7 +45,7 @@ const Card = ({
         style={{
           transition: "transform 0.5s",
         }}
-        className={`text-base mt-3 font-semibold text-blue-600 text-center ${
+        className={`text-base mt-3 font-semibold text-primary text-center ${
           activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
         }`}
       >
@@ -67,7 +55,7 @@ const Card = ({
         style={{
           transition: "transform 0.5s",
         }}
-        className={`text-base font-semibold text-blue-600 text-center ${
+        className={`text-base font-semibold text-primary text-center ${
           activeSlide === index + 1 ? "opacity-100 " : "opacity-0"
         }`}
       >

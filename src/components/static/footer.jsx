@@ -56,7 +56,7 @@ const Footer = () => {
                 className=" border w-44 sm:w-full h-10  mb-4 px-2 py-2 bg-gray-100 rounded-l"
               />
               <div>
-                <button className="bg-blue-500 rounded-r p-2 h-10">
+                <button className="bg-primary2 rounded-r p-2 h-10">
                   Subscribe
                 </button>
               </div>

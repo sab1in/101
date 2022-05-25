@@ -1,6 +1,5 @@
 import React from "react";
 import Prestige from "../../image/Prestige.jpg";
-import Lions from "../../image/Lions.jpg";
 import cornice from "../../image/All cornice.jpg";
 import "./ourClient.css";
 
@@ -9,12 +8,12 @@ const OurClient = () => {
   return (
     <section className="p-2 sm:p-8 flex justify-center items-center flex-col ">
       <div className="flex my-2 justify-center items-center gap-1">
-        <div className="h-0.5 w-4 bg-blue-600"></div>
+        <div className="h-0.5 w-4 bg-primary"></div>
         <p className="text-sm font-medium ">Our</p>
-        <p className="text-sm font-medium text-blue-600">Costumers</p>
+        <p className="text-sm font-medium text-primary">Costumers</p>
       </div>
       <h1 className="text-3xl text-center font-semibold">
-        Our <span className="text-blue-600">Clients</span> Love Our Work
+        Our <span className="text-primary">Clients</span> Love Our Work
       </h1>
       <p className="text-sm mt-2 font-medium text-gray-600">
         But don’t just take our word for it...
