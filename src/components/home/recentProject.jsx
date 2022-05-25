@@ -4,7 +4,8 @@ const RecentProject = () => {
   return (
     <section className="w-full bg-primary1 py-10">
       <div className="w-11/12 lg:w-10/12 mx-auto sm:flex gap-10 h-full">
-        <div className="sm:w-8/12 sm:mx-auto md:mx-0 md:w-1/2 h-full">
+        <div className="sm:w-8/12 sm:mx-auto md:mx-0 relative md:w-1/2 h-full">
+          <div className="h-16 w-16 rounded-md bg-primary opacity-30 absolute hidden lg:block -left-12 bottom-14"></div>
           <img src={image} alt="" className="m-0 rounded-md" />
         </div>
         <div className="sm:w-10/12 items-center sm:items-start sm:mx-auto md:mx-auto md:w-1/2  flex flex-col justify-center">

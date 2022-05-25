@@ -3,8 +3,11 @@ import Ellipse1 from "../../image/Ellipse 725.svg";
 import Ellipse2 from "../../image/Ellipse 720.svg";
 import Ellipse3 from "../../image/Ellipse 29.svg";
 import vector1 from "../../image/Vector 7.svg";
+import vector2 from "../../image/Vector 8.svg";
 import Ellipse4 from "../../image/Ellipse 723.svg";
 import Ellipse5 from "../../image/Ellipse 718.svg";
+import Ellipse6 from "../../image/Ellipse 725.svg";
+import Connect from "../../image/Connect.svg";
 
 const Hero = () => {
   return (
@@ -37,27 +40,34 @@ const Hero = () => {
                 background:
                   "linear-gradient(94.03deg, rgba(91, 111, 193, 0.2) 12.67%, rgba(214, 239, 248, 0.2) 63.83%)",
               }}
-              className="mt-10 text-white text-xl font-semibold px-5 py-2"
+              className="mt-10 text-white text-xl font-semibold px-5 py-2 flex items-center"
             >
-              Connect Now
+              <div>Connect Now</div>
+              <img src={Connect} alt="" className="pl-4" />
             </button>
-            <div className="absolute -top-14 right-40">
+            <div className="absolute -top-14 right-40 hidden sm:block">
               <img src={Ellipse1} alt="" />
             </div>
+            <img
+              src={Ellipse6}
+              alt=""
+              className="absolute right-10 hidden sm:block"
+            />
           </div>
           <div className=" md:w-5/12 relative">
             <img src={heroImg} alt="heroImg" width={660} height={600} />
-            <img src={Ellipse4} alt="" className="absolute left-10 bottom-20" />
+            <img src={Ellipse4} alt="" className="absolute left-6 bottom-8" />
             <img src={Ellipse5} alt="" className="absolute -right-16 top-10" />
           </div>
         </div>
-        <div className="absolute -bottom-24 left-20">
+        <div className="absolute -bottom-24 -left-16 sm:left-20 ">
           <img src={Ellipse2} alt="" />
         </div>
-        <div className="absolute left-0 bottom-40">
+        <div className="absolute left-0 bottom-40 ">
           <img src={Ellipse3} alt="" />
         </div>
         <img src={vector1} alt="" className="absolute left-0 top-0" />
+        <img src={vector2} alt="" className="absolute -right-20 -bottom-10" />
       </div>
     </section>
   );
